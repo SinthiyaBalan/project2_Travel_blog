@@ -5,38 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinthiya on a Journey</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <nav class="nav-wrapper">
-            <div class="logo">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBLVtGyJ6HulSROPf4--X372OkicFyK8E8RpIqTqk6cJIkcpz5ISp_Z-3cZz2SHSL6_NU&usqp=CAU">
-            </div>
-            <div class="menu-wrapper">
-                <a href="#home">Home</a>
-                <div class="dropdown">
-                <div class="des-list">Destinations
-                    <i class="fa fa-caret-down"></i>
-                </div>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+        
+
+            <div class="nav-wrapper">
+
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <div class="logo">
+                        <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBLVtGyJ6HulSROPf4--X372OkicFyK8E8RpIqTqk6cJIkcpz5ISp_Z-3cZz2SHSL6_NU&usqp=CAU">
+                    </div>
+                  
+                  <div class="active" id="myLinks">
+                    <a href="#news">Home</a>
+                    <a href="#home">Lets travel</a>
+                    <a href="#home">Contact</a>
+
+                    <div class="dropdown">
+                        <div class="des-list">Destinations
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+        
+                    </div>
+                   
+                    
                   </div>
-
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
                 </div>
-                <a href="#home">Lets travel</a>
-                <a href="#home">Contact</a>
-               
-
                 
-            </div>
+                
+                
+                <!-- End smartphone / tablet look -->
+                </div>
+                
+                <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+                </script>
+                
+                
 
-        </nav>
+        
     </header>
     <main>
-
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem asperiores quia quos, earum blanditiis esse facere? Possimus quaerat eos numquam eius placeat, repellat cupiditate similique temporibus voluptatibus perferendis saepe magni.</p>
     </main>
     <footer>
         <div class="footer-text">
