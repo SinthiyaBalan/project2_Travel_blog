@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,400&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Source+Sans+Pro:ital,wght@0,600;1,400&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,400&display=swap'); 
+/* @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Source+Sans+Pro:ital,wght@0,600;1,400&display=swap'); */
 
 *{
     margin: 0;
@@ -14,7 +14,7 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: 'Satisfy', cursive;
-    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
    }
 
 /* .nav-wrapper{
@@ -217,6 +217,75 @@ body{
     font-family: 'Source Sans Pro', sans-serif; 
     }
 
+    /* asia page */
+
+    .nav-des{
+
+        display: flex;
+        flex-direction: row;
+        background-color: #7B3E74;
+        
+        justify-content: space-around;
+    }
+
+    .nav-des a{
+        color: whitesmoke;
+        margin-top: 20px;
+        font-size: 23px;
+    }
+
+    
+  .logo-des img{
+    height: 72px;
+    width: 100px;
+    border-radius: 10%;
+    margin: 4px 0px 0px;
+   }
+
+   .travel{
+        display: none;
+   }
+
+   .place-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+   }
+   .place {
+
+    text-align: center;
+    
+   }
+
+   .place-desc{
+
+    text-align: center;
+    /* width: 319px; */
+    
+   }
+   .place-img img{
+    width: 325px;
+    height: 303px;
+    border: 2px #7B3E74 solid;
+   }
+   .place h3{
+    line-height: 3;
+    letter-spacing: 1.7px;
+    font-size: 20px;
+   }
+   .place a{
+
+    line-height: 5;
+    letter-spacing: 3.7px;
+    padding: 17px 18px 17px 18px;
+    text-transform: uppercase;
+    background: #E2AF24;
+    color: #f9f9f9;
+    
+   }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -268,6 +337,8 @@ body{
         align-items: center;
         gap: 20px;
         width: 80%;
+        margin: auto;
+        margin-top: 20px;
         }
    
     .img-wrapper .img-sec{
@@ -280,6 +351,17 @@ body{
         margin-top: 0px;
     }
 
+    .intro-sec{
+
+        margin-top:0px;
+        
+    }
+
+    /* asia page */
+
+    .travel{
+        display: block;
+       }
 }
 
 
