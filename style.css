@@ -13,6 +13,7 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: 'Source Sans Pro', sans-serif;
+    
 }
 
 .nav-wrapper{
@@ -103,4 +104,39 @@ body{
 
 .footer-text{
     text-align: center;
+    background: #7B3E74;
+    padding: 20px;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    /* home page */
+    .nav-wrapper{
+
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

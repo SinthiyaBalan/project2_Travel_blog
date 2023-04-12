@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;1,400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Source+Sans+Pro:ital,wght@0,600;1,400&display=swap');
 
 *{
     margin: 0;
@@ -12,31 +13,28 @@
 body{
     width: 100vw;
     height: 100vh;
-    font-family: 'Source Sans Pro', sans-serif;
-}
+    font-family: 'Satisfy', cursive;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+   }
 
 /* .nav-wrapper{
-    background-color: #7B3E74;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }*/
+    /* header */
  .nav-wrapper {
     max-width: 100%;
-    margin: auto;
-    
-    /* height: 500px; */
     color: white;
-    border-radius: 10px;
+    border-radius: 2px;
     background-color: #7B3E74;
     overflow: hidden;
-   
-  }
+   }
   
   .topnav {
     overflow: hidden;
     background-color: #7B3E74;
-    
     position: relative;
   }
   
@@ -50,9 +48,7 @@ body{
     text-decoration: none;
     font-size: 23px;
     display: block;
-   
-    
-  }
+   }
   
   .topnav a.icon {
     background: white;
@@ -71,8 +67,7 @@ body{
   .active {
     background-color: whitesmoke;
     color: black;
-    
-  }
+    }
 
   .logo img{
     height: 80px;
@@ -84,7 +79,9 @@ body{
    .dropdown {
     float: left;
     overflow: visible;
-  }
+    background-color: whitesmoke;
+    width: 100%;
+      }
   
   .dropdown .dropbtn{
     font-size: 16px;  
@@ -103,11 +100,11 @@ body{
   
   .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 3;
     left: 100px;
   }
   
@@ -129,6 +126,103 @@ body{
     display: block;
 }
 
+/* main contant */
+
+.main-container{
+
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.img-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.intro-sec{
+
+    margin-top:20px;
+    font-size: 23px;
+}
+
+.img-wrapper .img-sec{
+
+    background-image: url("./assets/images/IMG_20171227_162120.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 250px;
+    border: 2px #7B3E74 solid;
+    
+}
+
+.intro-sec{
+
+    border: 2px #E2AF24 solid;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    width: 70%;
+    
+}
+    .intro-sec h3{
+
+    text-align: center;
+    line-height: 2;
+    
+    }
+
+    .intro-sec h4{
+
+    text-align: center;
+    line-height: 2;
+    color: #7B3E74;
+    
+    }
+    .social-media-link p{
+
+    width: 100%;
+    text-align: center;
+
+    }
+
+
+    .sm-icon{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    }
+    .sm-icon .s-icons img{
+    width: 50px;
+    height: 50px;
+    }
+
+    /* footer */
+    .footer-text{
+    text-align: center;
+    background: #7B3E74;
+    padding: 20px;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif; 
+    }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+   
+}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
@@ -153,10 +247,38 @@ body{
         color: whitesmoke;
     }
     .des-list{
-
         color: whitesmoke;
     }
+
+    .dropdown-content{
+        float: none;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: visible;
+        background-color: #7B3E74;
+        width:auto;
+    }
+
+    .img-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 80%;
+        }
    
+    .img-wrapper .img-sec{
+        background-size: cover; 
+        width: 500px;
+        height: 276px;
+     }
+
+    .main-container{
+        margin-top: 0px;
+    }
 
 }
 
@@ -179,10 +301,3 @@ body{
 
 
 
-.footer-text{
-    text-align: center;
-    background: #7B3E74;
-    padding: 20px;
-    letter-spacing: 2px;
-    color: whitesmoke;
-}
