@@ -169,7 +169,7 @@ body{
     font-family: 'Satisfy', cursive;
     width: 70%;
     
-}
+    }
     .intro-sec h3{
 
     text-align: center;
@@ -183,6 +183,10 @@ body{
     line-height: 2;
     color: #7B3E74;
     
+    }
+
+    section.social-media-link {
+      margin-top: 27px;
     }
     .social-media-link p{
 
@@ -226,6 +230,9 @@ body{
         background-color: #7B3E74;
         
         justify-content: space-around;
+   
+        /* position: sticky;
+        top: 0; */
     }
 
     .nav-des a{
@@ -252,6 +259,7 @@ body{
         justify-content: center;
         align-items: center;
         margin-top: 10px;
+        gap: 10px;
    }
    .place {
 
@@ -285,6 +293,88 @@ body{
     color: #f9f9f9;
     
    }
+
+   /* Tour details for tajmahal,puket etc. */
+    .tour-details-container{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        margin-top: 10px;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+        margin: 1px;
+        padding: 14px;
+    }
+    .tour-details{
+      text-align: center;
+    }
+
+    .details-img {
+      text-align: center;
+    }
+    .details-img img{
+      width: 276px;
+      height: 205px;
+      border: 1px #E2AF24 solid;
+    }
+
+    .tour-details h3{
+      line-height: 2;
+      letter-spacing: .5px;
+      font-size: 20px;
+     }
+
+     .tour-details .tour-desc{
+
+      line-height: 1.8;
+      text-align: left;
+     }
+     .tour-details h2{
+      line-height: 2;
+      letter-spacing: .5px;
+      /* font-size: 20px; */
+      text-align: left;
+     }
+
+     /* contact page */
+     .contact-container{
+
+      text-align: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+     }
+
+     .contact-container input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    .contact-container input[type=submit] {
+      background-color: #E2AF24;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 55px;
+      
+    }
+    
+
+
+
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -362,6 +452,40 @@ body{
     .travel{
         display: block;
        }
+
+       .place-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 0px;
+        margin-top: 10px;
+        /* gap: 1px; */
+   }
+
+   .place{
+    /* height: auto; */
+    width: 378px;
+   }
+
+   .place-img img{
+    width: 310px;
+    height: 290px;
+    border: 1px #7B3E74 solid;
+   }
+
+   /* Tour details page */
+
+   .details-img img{
+    width: 460px;
+    height: 305px;
+    border: 1px #E2AF24 solid;
+  }
+
+  .contact-container input[type=submit] {
+
+    margin-left: 230px;
+  }
 }
 
 
